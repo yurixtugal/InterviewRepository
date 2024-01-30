@@ -28,7 +28,10 @@ const sleep = (milliseconds: number) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
 };
 
-
+(async () => {
+  await productionLineWithoutSingleResponsability();
+}
+)();
 
 
 // Now we will apply the Single Responsability Principle
